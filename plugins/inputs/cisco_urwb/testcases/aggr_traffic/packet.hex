@@ -1,0 +1,25 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002e           # sequence 46
+00000e10 00000000  # timestamp
+
+# AGGR_TRAFFIC_MULTI_RADIO TLV with two wireless interfaces
+0022 0020          # type 0x022, length 32
+
+# aggr_eth_traff
+000005dc           # RX_LAN 1500 kbps
+000009c4           # TX_LAN 2500 kbps
+
+# aggr_wlan_traff
+00002710           # RX_WLAN 10000 kbps
+00004e20           # TX_WLAN 20000 kbps
+000493e0           # AVAILABLE_CAPACITY 300000
+
+# aggr_wlan_traff
+00000000           # RX_WLAN 0 kbps
+00000064           # TX_WLAN 100 kbps
+0000c350           # AVAILABLE_CAPACITY 50000

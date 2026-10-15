@@ -1,0 +1,24 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002c           # sequence 44
+00000e10 00000000  # timestamp
+
+# ETH_TPT TLV with one TX and one RX entry
+000d 0022          # type 0x00D, length 34
+0001               # NUM_TX 1
+
+# eth_entry (TX)
+0a000001           # SRC_IP 10.0.0.1
+0a000002           # DST_IP 10.0.0.2
+000004d2           # TPT 1234
+00000064           # PKTS 100
+
+# eth_entry (RX)
+0a000002           # SRC_IP 10.0.0.2
+0a000001           # DST_IP 10.0.0.1
+00002694           # TPT 9876
+0000005a           # PKTS 90

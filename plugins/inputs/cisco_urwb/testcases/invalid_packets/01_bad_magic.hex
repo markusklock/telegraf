@@ -1,0 +1,8 @@
+# Main header with invalid magic
+deadbeef           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000001           # sequence 1
+00000e10 00000000  # timestamp

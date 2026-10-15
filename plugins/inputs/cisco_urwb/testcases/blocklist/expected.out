@@ -1,0 +1,4 @@
+urwb_packet,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 seq=49u,flags=0u,tlv_count=1u
+urwb_blocklist,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,local_interface=3.0.10.1,remote_interface=4.0.10.2,reason=fastdrop reason_code=1u,expiry_remaining_ms=1500u
+urwb_blocklist,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,local_interface=0.0.0.0,remote_interface=3.0.10.2,reason=rssiban reason_code=3u,expiry_remaining_ms=100000u
+urwb_blocklist,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,local_interface=4.0.10.1,remote_interface=0.0.0.0,reason=9 reason_code=9u,expiry_remaining_ms=0u

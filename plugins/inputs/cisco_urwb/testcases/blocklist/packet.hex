@@ -1,0 +1,26 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000031           # sequence 49
+00000e10 00000000  # timestamp
+
+# BLOCKLIST_MULTI_RADIO TLV with three entries
+0026 0024          # type 0x026, length 36
+
+# multi-radio blocklist entry for a specific wireless link
+03000a01           # LOCAL_IF 3.0.10.1
+04000a02           # REMOTE_IF 4.0.10.2
+010005dc           # EXPIRY fastdrop, 1500 ms
+
+# multi-radio blocklist entry for all local interfaces
+00000000           # LOCAL_IF 0.0.0.0
+03000a02           # REMOTE_IF 3.0.10.2
+03800064           # EXPIRY RSSI ban, 100 s
+
+# multi-radio blocklist entry for all remote interfaces
+04000a01           # LOCAL_IF 4.0.10.1
+00000000           # REMOTE_IF 0.0.0.0
+09000000           # EXPIRY undefined reason 9, 0 ms

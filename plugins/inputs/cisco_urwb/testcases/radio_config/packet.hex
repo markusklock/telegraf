@@ -1,0 +1,41 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002f           # sequence 47
+00000e10 00000000  # timestamp
+
+# RADIO_CFG_MULTI_RADIO TLV with three radios
+0023 003c          # type 0x023, length 60
+
+# multi_radio_cfg_tlv
+00                 # DEVINFO radio 0
+31                 # MODE fluidity, enabled, HE
+001da2112233       # WMAC 00:1d:a2:11:22:33
+20                 # STATUS TDMA
+12                 # TXPWR 18 dBm
+f050               # CWIDTH 80 MHz with reserved bits set
+fffe143c           # FREQ1 5180 MHz with reserved bits set
+00000000           # FREQ2 none
+
+# multi_radio_cfg_tlv
+01                 # DEVINFO radio 1
+12                 # MODE fixed infrastructure, enabled
+001da2445566       # WMAC 00:1d:a2:44:55:66
+c0                 # STATUS scanning, TX disabled
+fb                 # TXPWR -5 dBm
+0028               # CWIDTH 40 MHz
+0000096c           # FREQ1 2412 MHz
+00000985           # FREQ2 2437 MHz
+
+# multi_radio_cfg_tlv
+02                 # DEVINFO radio 2
+05                 # MODE undefined mode 5, disabled
+001da2778899       # WMAC 00:1d:a2:77:88:99
+00                 # STATUS
+00                 # TXPWR 0 dBm
+0000               # CWIDTH 0 MHz
+00000000           # FREQ1 none
+00000000           # FREQ2 none

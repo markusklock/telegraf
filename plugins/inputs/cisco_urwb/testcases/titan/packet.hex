@@ -1,0 +1,26 @@
+# Main header of an infrastructure unit
+f1ca0005           # magic
+00000002           # flags assured forwarding
+05010203           # mesh ID 5.1.2.3
+00000000           # vehicle ID none
+0537ff01           # mesh-end ID 5.55.255.1
+00000064           # sequence 100
+00000e10 00000000  # timestamp
+
+# TITAN TLV
+000a 0016          # type 0x00A, length 22
+02                 # TYPE mesh end failover
+12                 # FLAGS node failure, remote domain
+00000e10 00000000  # TIMESTAMP
+00000003           # COUNT 3
+0537ff02           # MASTER 5.55.255.2
+0537ff01           # BACKUP 5.55.255.1
+
+# TITAN TLV with reserved event type and without backup
+000a 0016          # type 0x00A, length 22
+03                 # TYPE reserved
+04                 # FLAGS recovery, local domain
+00000000 00000000  # TIMESTAMP not available
+00000000           # COUNT 0
+05010203           # MASTER 5.1.2.3
+00000000           # BACKUP not available

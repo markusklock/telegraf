@@ -1,0 +1,39 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002d           # sequence 45
+00000e10 00000000  # timestamp
+
+# MULTIPATH TLV with four routes
+001b 0030          # type 0x01B, length 48
+
+# lsp_multipath_route starting at the reporting unit
+01                 # FLAGS mobility LSP, path ID 0
+03                 # NUM_PEERS 3
+000c               # AGE 12 s
+43373611           # PEER 0.55.54.17 (reporting unit), local IF 3, remote IF 4
+14010203           # PEER 0.1.2.3, local IF 4, remote IF 1
+0137ff01           # PEER 0.55.255.1, local IF 1, remote IF 0
+
+# lsp_multipath_route ending at the reporting unit
+24                 # FLAGS destination is global gateway, path ID 1
+02                 # NUM_PEERS 2
+0005               # AGE 5 s
+00aabbcc           # PEER 0.170.187.204
+00373611           # PEER 0.55.54.17 (reporting unit)
+
+# lsp_multipath_route with same path ID but different destination
+20                 # FLAGS path ID 1
+02                 # NUM_PEERS 2
+0007               # AGE 7 s
+00373611           # PEER 0.55.54.17 (reporting unit)
+00ddeeff           # PEER 0.221.238.255
+
+# empty lsp_multipath_route, path ID and age must be ignored
+40                 # FLAGS path ID 2
+01                 # NUM_PEERS 1
+0063               # AGE 99 s
+00010204           # PEER 0.1.2.4

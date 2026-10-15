@@ -1,0 +1,25 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000033           # sequence 51
+00000e10 00000000  # timestamp
+
+# BLOCKLIST_MULTI_RADIO TLV with misaligned entries
+0026 000d          # type 0x026, length 13
+03000a01           # LOCAL_IF 3.0.10.1
+04000a02           # REMOTE_IF 4.0.10.2
+010005dc           # EXPIRY fastdrop, 1500 ms
+00                 # garbage
+
+# Valid AGGR_TRAFFIC_MULTI_RADIO TLV
+0022 0008          # type 0x022, length 8
+00000003           # RX_LAN 3 kbps
+00000004           # TX_LAN 4 kbps
+
+# Truncated TITAN TLV
+000a 0004          # type 0x00A, length 4
+0212               # TYPE and FLAGS
+0000               # truncated TIMESTAMP

@@ -1,0 +1,47 @@
+# Main header of an infrastructure unit
+f1ca0005           # magic
+00000000           # flags
+05010203           # mesh ID 5.1.2.3
+00000000           # vehicle ID none
+0537ff01           # mesh-end ID 5.55.255.1
+00000066           # sequence 102
+00000e10 00000000  # timestamp
+
+# HANDOFF_TBL_MULTI_RADIO TLV with one entry
+0021 0022          # type 0x021, length 34
+
+# L3Handoff
+0401020a           # SBR 4.1.2.10
+03373611           # MBR 3.55.54.17
+05373611           # MASTER 5.55.54.17
+05373612           # VEHICLE_ID 5.55.54.18
+00000063           # HO_SEQ 99
+00000141           # AGE 321 ms
+00                 # RESERVED
+02                 # NUM_UNITS 2
+05373613           # UNIT 5.55.54.19
+05373614           # UNIT 5.55.54.20
+
+# HANDOFF_TBL_MULTI_RADIO_MPO TLV with two entries for the same SBR and MBR
+0025 0038          # type 0x025, length 56
+
+# L3Handoff
+0301020a           # SBR 3.1.2.10
+04373611           # MBR 4.55.54.17
+05373611           # MASTER 5.55.54.17
+05373612           # VEHICLE_ID 5.55.54.18
+00000065           # HO_SEQ 101
+0000028e           # AGE 654 ms
+01                 # URW_FLAGS path ID 1
+00                 # NUM_UNITS unspecified
+
+# L3Handoff
+0301020a           # SBR 3.1.2.10
+04373611           # MBR 4.55.54.17
+05373611           # MASTER 5.55.54.17
+05373612           # VEHICLE_ID 5.55.54.18
+00000066           # HO_SEQ 102
+00000010           # AGE 16 ms
+02                 # URW_FLAGS path ID 2
+01                 # NUM_UNITS 1
+05373611           # UNIT 5.55.54.17

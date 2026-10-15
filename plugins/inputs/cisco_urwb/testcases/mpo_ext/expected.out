@@ -1,0 +1,2 @@
+urwb_packet,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 seq=48u,flags=0u,tlv_count=1u
+urwb_mpo_ext,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,client_mac=00:50:56:aa:bb:cc tx_primary=100u,tx_secondary=80u,rx_primary_accept=70u,rx_primary_drop=3u,rx_secondary_accept=60u,rx_secondary_drop=2u,lost_both=1u,lost_primary_only=5u

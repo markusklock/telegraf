@@ -1,0 +1,4 @@
+invalid magic 0xDEADBEEF
+packet too short: 8 bytes
+length 16 of TLV 0x022 exceeds remaining 8 bytes
+truncated TLV header: 2 bytes

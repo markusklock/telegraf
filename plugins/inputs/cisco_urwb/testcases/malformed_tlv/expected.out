@@ -1,0 +1,2 @@
+urwb_packet,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 seq=51u,flags=0u,tlv_count=3u
+urwb_aggr_eth,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 rx_kbps=3u,tx_kbps=4u

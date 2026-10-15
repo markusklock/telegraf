@@ -1,0 +1,3 @@
+urwb_packet,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 seq=44u,flags=0u,tlv_count=1u
+urwb_eth_flow,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,direction=tx,src_address=10.0.0.1,dst_address=10.0.0.2 throughput=1234u,packets=100u
+urwb_eth_flow,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,direction=rx,src_address=10.0.0.2,dst_address=10.0.0.1 throughput=9876u,packets=90u

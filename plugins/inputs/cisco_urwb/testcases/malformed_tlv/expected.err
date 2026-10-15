@@ -1,0 +1,2 @@
+invalid TLV 0x026: length 13 is not a multiple of the entry size 12
+invalid TLV 0x00A: too short: 4 bytes

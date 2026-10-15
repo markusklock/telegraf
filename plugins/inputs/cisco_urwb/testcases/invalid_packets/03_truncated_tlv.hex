@@ -1,0 +1,13 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000003           # sequence 3
+00000e10 00000000  # timestamp
+
+# TLV exceeding the packet
+0022 0010          # type 0x022, length 16
+00000001           # RX_LAN 1 kbps
+00000002           # TX_LAN 2 kbps

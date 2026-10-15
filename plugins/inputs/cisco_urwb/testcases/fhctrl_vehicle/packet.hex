@@ -1,0 +1,41 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002a           # sequence 42
+00000e10 00000000  # timestamp
+
+# FHCTRL_VEHICLE TLV with state and two entries
+0001 0046          # type 0x001, length 70
+
+# fhctrl_state
+05010203           # CURR_SBR 5.1.2.3
+05373611           # CURR_MBR 5.55.54.17
+00000037           # CURR_SEQ 55
+00000e00 00000000  # HO_TIME
+02                 # HO_RETRIES 2
+40                 # HO_FLAGS pending
+000004d2           # HO_AGE 1234 ms
+00030014           # DOP value 20, color 3
+0003               # FLAGS wireless relay, can accept
+0000               # INHIBIT
+
+# fhctrl_entry
+05010203           # SBR_ID 5.1.2.3
+05373611           # MBR_ID 5.55.54.17
+00010010           # DOP value 16, color 1
+6024               # CHAN_INFO 80 MHz, channel 36
+0064               # AGE 100 ms
+c4                 # RSSI -60
+30                 # FLAGS active link, link ID 1
+
+# fhctrl_entry
+05010204           # SBR_ID 5.1.2.4
+05373611           # MBR_ID 5.55.54.17
+00020018           # DOP value 24, color 2
+102c               # CHAN_INFO 20 MHz, channel 44
+01f4               # AGE 500 ms
+b5                 # RSSI -75
+01                 # FLAGS scanning

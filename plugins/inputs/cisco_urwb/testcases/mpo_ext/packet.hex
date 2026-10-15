@@ -1,0 +1,22 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000030           # sequence 48
+00000e10 00000000  # timestamp
+
+# MPO EXT TLV with one client
+0024 0026          # type 0x024, length 38
+
+# mpoext_state
+005056aabbcc       # SRC_MAC 00:50:56:aa:bb:cc
+00000064           # TX1 100
+00000050           # TX2 80
+00000046           # R1_ACCEPTED 70
+00000003           # R1_DROP 3
+0000003c           # R2_ACCEPTED 60
+00000002           # R2_DROP 2
+00000001           # LOST 1
+00000005           # LOST1 5

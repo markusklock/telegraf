@@ -1,0 +1,18 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000032           # sequence 50
+00000e10 00000000  # timestamp
+
+# GNSS_NMEA TLV which is not supported and must be skipped
+0027 000a          # type 0x027, length 10
+2447505458542a3030 # NMEA sentence "$GPTXT*00"
+00                 # null terminator
+
+# AGGR_TRAFFIC_MULTI_RADIO TLV with reserved bits set in type and length
+f022 f008          # type 0x022, length 8
+00000001           # RX_LAN 1 kbps
+00000002           # TX_LAN 2 kbps

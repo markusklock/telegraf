@@ -1,0 +1,41 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+0000002b           # sequence 43
+00000e10 00000000  # timestamp
+
+# FHCTRL_VEHICLE_MULTI_RADIO TLV with state and two entries
+001d 0046          # type 0x01D, length 70
+
+# fhctrl_state
+0401020a           # CURR_SBR 4.1.2.10
+03373611           # CURR_MBR 3.55.54.17
+00000038           # CURR_SEQ 56
+00000000 00000000  # HO_TIME
+00                 # HO_RETRIES 0
+80                 # HO_FLAGS failed
+ffffffff           # HO_AGE not available
+00000000           # DOP value 0, color 0
+000c               # FLAGS critical, frequency scan
+0101               # INHIBIT
+
+# fhctrl_entry
+0401020a           # SBR_ID 4.1.2.10
+03373611           # MBR_ID 3.55.54.17
+0000000a           # DOP value 10, color 0
+7095               # CHAN_INFO 160 MHz, channel 149
+0000               # AGE 0 ms
+d3                 # RSSI -45
+f0                 # FLAGS active link, link ID 7
+
+# fhctrl_entry
+0301020b           # SBR_ID 3.1.2.11
+04373611           # MBR_ID 4.55.54.17
+00000000           # DOP value 0, color 0
+0001               # CHAN_INFO invalid width, channel 1
+000a               # AGE 10 ms
+9c                 # RSSI -100
+00                 # FLAGS none

@@ -1,0 +1,58 @@
+# Main header of an infrastructure unit
+f1ca0005           # magic
+00000000           # flags
+05010203           # mesh ID 5.1.2.3
+00000000           # vehicle ID none
+0537ff01           # mesh-end ID 5.55.255.1
+00000065           # sequence 101
+00000e10 00000000  # timestamp
+
+# TX_STATS_MULTI_RADIO TLV with two entries
+001e 0038          # type 0x01E, length 56
+
+# tx_stats
+0401020a           # SRC_IP 4.1.2.10
+03373611           # DST_IP 3.55.54.17
+000003e8           # SENT 1000
+00000032           # RETRIES 50
+0000000a           # FAILED 10
+0000fa00           # BYTES 64000
+00c8               # AGE 200 ms
+b8                 # TX_FLAGS 160 MHz, HE, GI 1.6us
+17                 # TX_MCS 23
+
+# tx_stats
+0401020a           # SRC_IP 4.1.2.10
+04373611           # DST_IP 4.55.54.17
+00000000           # SENT 0
+00000000           # RETRIES 0
+00000000           # FAILED 0
+00000000           # BYTES 0
+0000               # AGE 0 ms
+00                 # TX_FLAGS 20 MHz, no HT, GI 0.8us
+00                 # TX_MCS 0
+
+# RX_STATS_MULTI_RADIO TLV with two entries
+001f 002c          # type 0x01F, length 44
+
+# rx_stats
+03373611           # SRC_IP 3.55.54.17
+0401020a           # DST_IP 4.1.2.10
+000007d0           # RECEIVED 2000
+0001f400           # BYTES 128000
+d3                 # RSSI -45
+09                 # RX_MCS 9
+64                 # RX_FLAGS 80 MHz, VHT, GI 0.4us
+00                 # RESERVED
+0096               # AGE 150 ms
+
+# rx_stats
+04373611           # SRC_IP 4.55.54.17
+0401020a           # DST_IP 4.1.2.10
+0000000a           # RECEIVED 10
+00000400           # BYTES 1024
+a6                 # RSSI -90
+0f                 # RX_MCS 15
+d1                 # RX_FLAGS 40 MHz, HT, GI 3.2us
+00                 # RESERVED
+0001               # AGE 1 ms

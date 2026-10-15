@@ -1,0 +1,11 @@
+# Main header of a mobile unit
+f1ca0005           # magic
+00000000           # flags
+05373611           # mesh ID 5.55.54.17
+05373612           # vehicle ID 5.55.54.18
+0537ff01           # mesh-end ID 5.55.255.1
+00000004           # sequence 4
+00000e10 00000000  # timestamp
+
+# Truncated TLV header
+0022               # type 0x022

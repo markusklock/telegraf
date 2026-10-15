@@ -1,0 +1,4 @@
+urwb_packet,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 seq=46u,flags=0u,tlv_count=1u
+urwb_aggr_eth,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1 rx_kbps=1500u,tx_kbps=2500u
+urwb_aggr_wlan,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,iface_index=0 rx_kbps=10000u,tx_kbps=20000u,available_capacity=300000u
+urwb_aggr_wlan,source=127.0.0.1,mesh_id=5.55.54.17,vehicle_id=5.55.54.18,meshend_id=5.55.255.1,iface_index=1 rx_kbps=0u,tx_kbps=100u,available_capacity=50000u
